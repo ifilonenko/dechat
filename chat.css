@@ -215,18 +215,6 @@ a, input, textarea {
   outline: none;
 }
 
-.sprite {
-  background-image: url('./sprite.png');
-  background-repeat: no-repeat;
-  display: inline-block;
-}
-
-@media only screen and (-webkit-min-device-pixel-ratio: 2) {
-  .sprite {
-    background-image: url('./sprite-retina.png');
-    background-size: 250px 75px;
-  }
-}
 
 .left-column {
   display: inline-block;
@@ -251,11 +239,6 @@ a, input, textarea {
   text-align: center;
 }
 
-.left-column .sprite {
-  margin-top: 3px;
-  height: 18px;
-  width: 24px;
-}
 
 /* Popup areas */
 
@@ -310,15 +293,6 @@ a, input, textarea {
   background-position: -25px 0px;
 }
 
-.sprite.icon-notes {
-  margin-top: 5px;
-  background-position: -50px 0px;
-}
-
-.sprite.icon-assignee {
-  margin-top: 6px;
-  background-position: -75px 0px;
-}
 
 #workspace_select_container {
   display: inline-block;
@@ -341,7 +315,6 @@ a, input, textarea {
   padding-bottom: 12px;
 }
 
-.name-row .left-column .sprite { margin-top: 2px; }
 
 #name_input, #notes_input, #assignee, #assignee_input {
   width: 100%;

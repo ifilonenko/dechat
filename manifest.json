@@ -3,17 +3,17 @@
   "name": "Decentralized Chat",
   "version": "1.0.3",
   "description": "Chat with security and privacy.",
-  // "icons": {
-  //   "128": "icon128.png",
-  //   "48": "icon48.png",
-  //   "16": "icon16.png"
-  // },
+  "icons": {
+    "16": "messages16.jpg",
+    "48": "messages48.jpg",
+    "128": "messages.jpg"
+  },
   "minimum_chrome_version": "25",
 
   "browser_action": {
-    // "default_icon": "icon19.png",
+    "default_icon": "messages.jpg",
     "default_title": "DChat",
-    "default_popup": "chat.html"
+    "default_popup": "username_input.html"
   },
   "background": {
     "persistent": true,
