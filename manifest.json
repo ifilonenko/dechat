@@ -19,12 +19,7 @@
     "persistent": true,
     "scripts": [
       "jquery-2.1.3.min.js",
-      // "asana.js",
-      // "api_bridge.js",
-      // "extension_server.js",
-      // "server_model.js",
-      // "options.js",
-      "background.js"
+      "background.js",
       "bootstrap.min.js"
     ]
   },
