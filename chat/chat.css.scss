@@ -1,0 +1,66 @@
+body {
+  overflow: hidden;
+  /* Also affects Asana.POPUP_UI_WIDTH and Asana.POPUP_UI_HEIGHT */
+  height: 310px;    
+  width: 500px;
+  padding: 0px;
+  margin: 0px;
+  background-color: #fff;
+  font-size: 14px;
+  font-family: proxima-nova, "Helvetica Neue", Arial, sans-serif;
+
+  .s {
+    .chatroom {
+
+      top: 0px;
+      left: 0px;
+      bottom: 0px;
+      right: 0px;
+      height: 310px;
+      border: 1px solid black;
+      text-align:center;
+      overflow: scroll;
+      .room {
+        border: 1px solid black;
+        padding: 10px 0px 10px 0px;
+        margin: 10px 0px 10px 0px;
+        
+      }
+    }
+    .usersBoxContainer {
+      overflow: scroll;
+      height: 310px;
+      top: 0px;
+      left: 0px;
+      bottom: 0px;
+      right: 0px;
+      border: 1px solid black;
+      .h3 {
+        text-align: center;
+      }
+      .users {
+          border-top: 1px solid black;
+        .userbox {
+          .camera_connect {
+            float: left;
+          }
+          .username {
+          
+          }
+        }
+      }
+      // height: 100vh;
+    }
+    .chat {
+      overflow: scroll;
+      top: 0px;
+      left: 0px;
+      bottom: 0px;
+      right: 0px;
+      height: 310px;
+      border: 1px solid black;
+      // height: 100vh;
+    }
+  }
+}
+

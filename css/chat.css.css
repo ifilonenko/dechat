@@ -1,11 +1,10 @@
 body {
   overflow: hidden;
   /* Also affects Asana.POPUP_UI_WIDTH and Asana.POPUP_UI_HEIGHT */
-  height: 310px;    
+  height: 310px;
   width: 500px;
   padding: 0px;
   margin: 0px;
   background-color: #fff;
   font-size: 14px;
-  font-family: proxima-nova, "Helvetica Neue", Arial, sans-serif;
-}
+  font-family: proxima-nova, "Helvetica Neue", Arial, sans-serif; }
