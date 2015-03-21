@@ -9,6 +9,29 @@
 .close-x:hover {
   background-position: -175px -25px;
 }
+.login_view {
+  width: 100%;
+  height: 100%;
+  background-color: #edf1f4;
+}
+
+.login_view .content {
+  padding-top: 65px;
+  width: 400px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 19px;
+  font-weight: 400;
+  color: #596573;
+}
+
+.login_view .button {
+  margin-top: 24px;
+}
+
+.login_view #signup_button {
+  margin-right: 8px;
+}
 
 .form-control {
   display: inline-block;

@@ -35,13 +35,5 @@
     "cookies",
     "webRequest",
     "webRequestBlocking"
-  ],
-  "content_security_policy": "script-src 'self' https://use.typekit.net; object-src 'self'",
-  "commands": {
-    "_execute_browser_action": {
-      "suggested_key": {
-        "default": "Alt+Shift+A"
-      }
-    }
-  }
+  ]
 }
