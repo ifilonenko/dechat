@@ -1,52 +1,47 @@
 {
-  "name": "CHANGE THIS : Extension boilerplate",
-  "version": "0.0.1",
   "manifest_version": 2,
-  "description": "This extension was created with the awesome extensionizr.com",
-  "homepage_url": "http://extensionizr.com",
-  "icons": {
-    "16": "icons/icon16.png",
-    "48": "icons/icon48.png",
-    "128": "icons/icon128.png"
-  },
-  "default_locale": "en",
-  "background": {
-    "page": "src/bg/background.html",
-    "persistent": true
-  },
-  "options_page": "src/options_custom/index.html",
+  "name": "Decentralized Chat",
+  "version": "1.0.3",
+  "description": "Chat with security and privacy.",
+  // "icons": {
+  //   "128": "icon128.png",
+  //   "48": "icon48.png",
+  //   "16": "icon16.png"
+  // },
+  "minimum_chrome_version": "25",
+
   "browser_action": {
-    "default_icon": "icons/icon19.png",
-    "default_title": "browser action demo",
-    "default_popup": "src/browser_action/browser_action.html"
+    // "default_icon": "icon19.png",
+    "default_title": "DChat",
+    "default_popup": "username_input.html"
   },
+  "background": {
+    "persistent": true,
+    "scripts": [
+      // "jquery-1.7.1.min.js",
+      // "asana.js",
+      // "api_bridge.js",
+      // "extension_server.js",
+      // "server_model.js",
+      // "options.js",
+      "background.js"
+    ]
+  },
+  "incognito": "split",
+  "offline_enabled": false,
+
   "permissions": [
-    "chrome://favicon/",
-    "clipboardRead",
-    "clipboardWrite",
-    "contentSettings",
+    "tabs",
     "cookies",
-    "tts",
-    "ttsEngine",
-    "history",
-    "notifications"
+    "webRequest",
+    "webRequestBlocking"
   ],
-  "content_scripts": [
-    {
-      "matches": [
-        "https://www.google.com/*"
-      ],
-      "css": [
-        "src/inject/inject.css"
-      ]
-    },
-    {
-      "matches": [
-        "https://www.google.com/*"
-      ],
-      "js": [
-        "src/inject/inject.js"
-      ]
+  "content_security_policy": "script-src 'self' https://use.typekit.net; object-src 'self'",
+  "commands": {
+    "_execute_browser_action": {
+      "suggested_key": {
+        "default": "Alt+Shift+A"
+      }
     }
-  ]
+  }
 }
