@@ -1,40 +1,83 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <script src="https://fb.me/react-0.13.1.js"></script>
-<!--   // <script src="https://fb.me/JSXTransformer-0.13.1.js"></script> -->
-  <script src="https://code.jquery.com/jquery-1.10.0.min.js"></script>
-  <link rel="stylesheet" href="chat.css">
+  <link rel="stylesheet" href="chat.css.css">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
   <script src="chat.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
   <title>Decentralized Chat</title>
 </head>
 <body>
 <!--   <div id="react-content">
   </div> -->
-  <div id="s"></div>
-  <div class="first-step">
-    <div class="banner">
-      <div class="left-column">
-        <div id="logo" class="sprite"></div>
+  <div></div>
+  <div class="s container">
+    <div class="chatroom col-xs-2">
+      <div class="room">FB</div>
+      <div class="room">AP</div>
+      <div class="room">AB</div>
+      <div class="room">SP</div>
+      <div class="room">FB</div>
+      <div class="room">AP</div>
+      <div class="room">AB</div>
+      <div class="room">SP</div>
+    </div>
+    <div class="usersBoxContainer col-xs-3">
+      <h4>Users</h4>
+      <div class="users">
+        <div class="userbox">
+          <div class="camera_connect"><span class="glyphicon glyphicon-camera"></span></div>
+          <p class="username">Shuo</p>
+        </div>
       </div>
-      <div class="middle-column">
-        <span class="banner-add">
-          Talk Channel
-        </span>
-        <span class="search">
-          <input class="form-control searchbar" id="search" placeholder="Search" type="search" name="q">
-          <i class="fa fa-search"></i>
-        </span>
+      <div class="users">
+        <div class="userbox">
+          <div class="camera_connect"><span class="glyphicon glyphicon-camera"></span></div>
+          <p class="username">Ilan</p>
+        </div>
       </div>
-      <div class="right-column">
-        <a id="close_login" class="sprite close-x" tabindex="-1">X</a>
+      <div class="users">
+        <div class="userbox">
+          <div class="camera_connect"><span class="glyphicon glyphicon-camera"></span></div>
+          <p class="username">Anton</p>
+        </div>
+      </div>
+      <div class="users">
+        <div class="userbox">
+          <div class="camera_connect"><span class="glyphicon glyphicon-camera"></span></div>
+          <p class="username">Feifan</p>
+        </div>
       </div>
     </div>
-    <div class="container">
-      <h1>Channel Name</h1>
-      <ul id="chatbox" class="unstyled">
-      </ul>
-    </div>
+    <div class="chat col-xs-7">
+      <section class="navbar">
+        <h4>reddit.com/r/frontpage</h4>
+        <div class="input">
+          <button class="search">search</button>
+          <input class="searchbar" place-holder="Search">
+        </div>
+      </section>
+      <section class="chatbox">
+        <div class="messagesbox">
+          <div class="message">
+            <div class="username">Ilan</div>
+            <div class="message">geese</div>
+          </div>
+          <div class="message">
+            <div class="username">Anton</div>
+            <div class="message">need to finish algo hw</div>
+          </div>
+          <div class="message">
+            <div class="username">Shuo</div>
+            <div class="message">Im fucked next week</div>
+          </div>
+        </div>
+        <div class="inputbox row">
+          <input class="newmessage col-xs-11" place-holder="chat here">
+          <button type="submit col-xs-1" class="btn btn-primary"></button>
+        </div>
+      </section>
+    </div> 
   </div>
 </body>
 </html>
