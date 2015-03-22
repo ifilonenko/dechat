@@ -1,45 +1,64 @@
 body {
   overflow: hidden;
   /* Also affects Asana.POPUP_UI_WIDTH and Asana.POPUP_UI_HEIGHT */
-  height: 310px;
-  width: 500px;
   padding: 0px;
   margin: 0px;
   background-color: #fff;
   font-size: 14px;
   font-family: proxima-nova, "Helvetica Neue", Arial, sans-serif; }
-  body .s .chatroom {
-    top: 0px;
-    left: 0px;
-    bottom: 0px;
-    right: 0px;
-    height: 310px;
-    border: 1px solid black;
-    text-align: center;
-    overflow: scroll; }
-    body .s .chatroom .room {
+  body .s {
+    height: 100vh; }
+    body .s .foldIn .chatroom {
+      top: 0px;
+      left: 0px;
+      bottom: 0px;
+      right: 0px;
+      height: 100%;
       border: 1px solid black;
-      padding: 10px 0px 10px 0px;
-      margin: 10px 0px 10px 0px; }
-  body .s .usersBoxContainer {
-    overflow: scroll;
-    height: 310px;
-    top: 0px;
-    left: 0px;
-    bottom: 0px;
-    right: 0px;
-    border: 1px solid black; }
-    body .s .usersBoxContainer .h3 {
-      text-align: center; }
-    body .s .usersBoxContainer .users {
-      border-top: 1px solid black; }
-      body .s .usersBoxContainer .users .userbox .camera_connect {
+      text-align: center;
+      overflow: scroll; }
+      body .s .foldIn .chatroom .room {
+        border: 1px solid black;
+        padding: 10px 0px 10px 0px;
+        margin: 10px 0px 10px 0px; }
+    body .s .foldIn .usersBoxContainer {
+      height: 100vh;
+      overflow: scroll;
+      top: 0px;
+      left: 0px;
+      bottom: 0px;
+      right: 0px;
+      border: 1px solid black; }
+      body .s .foldIn .usersBoxContainer .h3 {
+        text-align: center; }
+      body .s .foldIn .usersBoxContainer .users {
+        border-top: 1px solid black; }
+        body .s .foldIn .usersBoxContainer .users .userbox .camera_connect {
+          float: left; }
+    body .s .foldIn .uservideos .videobox {
+      margin: 10px 10px 10px 10px;
+      border: 1px solid black; }
+    body .s .chat {
+      height: 100vh;
+      overflow: scroll;
+      top: 0px;
+      left: 0px;
+      bottom: 0px;
+      right: 0px;
+      border: 1px solid black; }
+      body .s .chat .fa-arrow-left {
+        position: absolute;
+        top: 300px;
+        padding-right: -10px;
+        margin-right: -10px; }
+      body .s .chat .navbar h4 {
         float: left; }
-  body .s .chat {
-    overflow: scroll;
-    top: 0px;
-    left: 0px;
-    bottom: 0px;
-    right: 0px;
-    height: 310px;
-    border: 1px solid black; }
+      body .s .chat .navbar .camera {
+        margin: 5px 1px 0px 0px;
+        float: right; }
+      body .s .chat .chatbox {
+        border: 1px solid black;
+        overflow: scroll;
+        height: 80vh; }
+        body .s .chat .chatbox .messagesBox .messageContainer {
+          border-bottom: 1px solid black; }
